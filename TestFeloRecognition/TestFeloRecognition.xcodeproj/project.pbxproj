@@ -1,0 +1,844 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7ADE7D9EFCFF4F73F1589FA2 /* Pods_TestFeloRecognitionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5500BC9F3BE96B2E779B16D3 /* Pods_TestFeloRecognitionTests.framework */; };
+		9BB8845528DF4ADD00C3313F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8845428DF4ADD00C3313F /* AppDelegate.m */; };
+		9BB8845828DF4ADD00C3313F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8845728DF4ADD00C3313F /* SceneDelegate.m */; };
+		9BB8845B28DF4ADD00C3313F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8845A28DF4ADD00C3313F /* ViewController.m */; };
+		9BB8845E28DF4ADD00C3313F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB8845C28DF4ADD00C3313F /* Main.storyboard */; };
+		9BB8846028DF4AE100C3313F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BB8845F28DF4AE100C3313F /* Assets.xcassets */; };
+		9BB8846328DF4AE100C3313F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB8846128DF4AE100C3313F /* LaunchScreen.storyboard */; };
+		9BB8846628DF4AE100C3313F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8846528DF4AE100C3313F /* main.m */; };
+		9BB8847028DF4AE100C3313F /* TestFeloRecognitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8846F28DF4AE100C3313F /* TestFeloRecognitionTests.m */; };
+		9BB8847A28DF4AE100C3313F /* TestFeloRecognitionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8847928DF4AE100C3313F /* TestFeloRecognitionUITests.m */; };
+		9BB8847C28DF4AE100C3313F /* TestFeloRecognitionUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8847B28DF4AE100C3313F /* TestFeloRecognitionUITestsLaunchTests.m */; };
+		9BB8848F28E010B700C3313F /* FeloRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB8848828DFF78300C3313F /* FeloRecognition.framework */; };
+		9BB8849028E010B700C3313F /* FeloRecognition.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB8848828DFF78300C3313F /* FeloRecognition.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9BCCFAA428E3E4D100C8B463 /* SubTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCCFAA328E3E4D100C8B463 /* SubTitleViewController.m */; };
+		9BD54A7928E6C74600CA97B0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD54A7428E6C74600CA97B0 /* MBProgressHUD.m */; };
+		9BD54A7A28E6C74600CA97B0 /* MBProgressHUD+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD54A7728E6C74600CA97B0 /* MBProgressHUD+Extension.m */; };
+		9BD54A7B28E6C74600CA97B0 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9BD54A7828E6C74600CA97B0 /* MBProgressHUD.bundle */; };
+		ACBEFCC4CB456F211E7946B5 /* Pods_TestFeloRecognition_TestFeloRecognitionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A793448A6B742196A45776 /* Pods_TestFeloRecognition_TestFeloRecognitionUITests.framework */; };
+		C497A8BE003ABA5DB61F51B9 /* Pods_TestFeloRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD6C5391901401D5A593CF /* Pods_TestFeloRecognition.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BB8846C28DF4AE100C3313F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BB8844828DF4ADD00C3313F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BB8844F28DF4ADD00C3313F;
+			remoteInfo = TestFeloRecognition;
+		};
+		9BB8847628DF4AE100C3313F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BB8844828DF4ADD00C3313F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BB8844F28DF4ADD00C3313F;
+			remoteInfo = TestFeloRecognition;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9BB8849128E010B700C3313F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9BB8849028E010B700C3313F /* FeloRecognition.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0BAF058E9D58CF76CA6E98C3 /* Pods-TestFeloRecognition-TestFeloRecognitionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestFeloRecognition-TestFeloRecognitionUITests.release.xcconfig"; path = "Target Support Files/Pods-TestFeloRecognition-TestFeloRecognitionUITests/Pods-TestFeloRecognition-TestFeloRecognitionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		31B58E57E228D04B3EBB55A3 /* Pods-TestFeloRecognition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestFeloRecognition.debug.xcconfig"; path = "Target Support Files/Pods-TestFeloRecognition/Pods-TestFeloRecognition.debug.xcconfig"; sourceTree = "<group>"; };
+		5500BC9F3BE96B2E779B16D3 /* Pods_TestFeloRecognitionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestFeloRecognitionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56B74F0159E3F4DD2969761D /* Pods-TestFeloRecognition-TestFeloRecognitionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestFeloRecognition-TestFeloRecognitionUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestFeloRecognition-TestFeloRecognitionUITests/Pods-TestFeloRecognition-TestFeloRecognitionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		66DD6C5391901401D5A593CF /* Pods_TestFeloRecognition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestFeloRecognition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86834946066EB717DB421683 /* Pods-TestFeloRecognition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestFeloRecognition.release.xcconfig"; path = "Target Support Files/Pods-TestFeloRecognition/Pods-TestFeloRecognition.release.xcconfig"; sourceTree = "<group>"; };
+		9BB8845028DF4ADD00C3313F /* TestFeloRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestFeloRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BB8845328DF4ADD00C3313F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9BB8845428DF4ADD00C3313F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9BB8845628DF4ADD00C3313F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		9BB8845728DF4ADD00C3313F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		9BB8845928DF4ADD00C3313F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9BB8845A28DF4ADD00C3313F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9BB8845D28DF4ADD00C3313F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BB8845F28DF4AE100C3313F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BB8846228DF4AE100C3313F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BB8846428DF4AE100C3313F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BB8846528DF4AE100C3313F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9BB8846B28DF4AE100C3313F /* TestFeloRecognitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestFeloRecognitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BB8846F28DF4AE100C3313F /* TestFeloRecognitionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFeloRecognitionTests.m; sourceTree = "<group>"; };
+		9BB8847528DF4AE100C3313F /* TestFeloRecognitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestFeloRecognitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BB8847928DF4AE100C3313F /* TestFeloRecognitionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFeloRecognitionUITests.m; sourceTree = "<group>"; };
+		9BB8847B28DF4AE100C3313F /* TestFeloRecognitionUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFeloRecognitionUITestsLaunchTests.m; sourceTree = "<group>"; };
+		9BB8848828DFF78300C3313F /* FeloRecognition.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FeloRecognition.framework; sourceTree = "<group>"; };
+		9BCCFAA228E3E4D100C8B463 /* SubTitleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubTitleViewController.h; sourceTree = "<group>"; };
+		9BCCFAA328E3E4D100C8B463 /* SubTitleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubTitleViewController.m; sourceTree = "<group>"; };
+		9BD54A7428E6C74600CA97B0 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		9BD54A7528E6C74600CA97B0 /* MBProgressHUD+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Extension.h"; sourceTree = "<group>"; };
+		9BD54A7628E6C74600CA97B0 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		9BD54A7728E6C74600CA97B0 /* MBProgressHUD+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Extension.m"; sourceTree = "<group>"; };
+		9BD54A7828E6C74600CA97B0 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		CE0E5B3F6324C666751E1D2B /* Pods-TestFeloRecognitionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestFeloRecognitionTests.release.xcconfig"; path = "Target Support Files/Pods-TestFeloRecognitionTests/Pods-TestFeloRecognitionTests.release.xcconfig"; sourceTree = "<group>"; };
+		D8A793448A6B742196A45776 /* Pods_TestFeloRecognition_TestFeloRecognitionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestFeloRecognition_TestFeloRecognitionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD57901F3F0C8115DF279A2C /* Pods-TestFeloRecognitionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestFeloRecognitionTests.debug.xcconfig"; path = "Target Support Files/Pods-TestFeloRecognitionTests/Pods-TestFeloRecognitionTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BB8844D28DF4ADD00C3313F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB8848F28E010B700C3313F /* FeloRecognition.framework in Frameworks */,
+				C497A8BE003ABA5DB61F51B9 /* Pods_TestFeloRecognition.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BB8846828DF4AE100C3313F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ADE7D9EFCFF4F73F1589FA2 /* Pods_TestFeloRecognitionTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BB8847228DF4AE100C3313F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBEFCC4CB456F211E7946B5 /* Pods_TestFeloRecognition_TestFeloRecognitionUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8328843C89E79A70DFB5A228 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31B58E57E228D04B3EBB55A3 /* Pods-TestFeloRecognition.debug.xcconfig */,
+				86834946066EB717DB421683 /* Pods-TestFeloRecognition.release.xcconfig */,
+				56B74F0159E3F4DD2969761D /* Pods-TestFeloRecognition-TestFeloRecognitionUITests.debug.xcconfig */,
+				0BAF058E9D58CF76CA6E98C3 /* Pods-TestFeloRecognition-TestFeloRecognitionUITests.release.xcconfig */,
+				DD57901F3F0C8115DF279A2C /* Pods-TestFeloRecognitionTests.debug.xcconfig */,
+				CE0E5B3F6324C666751E1D2B /* Pods-TestFeloRecognitionTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9BB8844728DF4ADD00C3313F = {
+			isa = PBXGroup;
+			children = (
+				9BB8845228DF4ADD00C3313F /* TestFeloRecognition */,
+				9BB8846E28DF4AE100C3313F /* TestFeloRecognitionTests */,
+				9BB8847828DF4AE100C3313F /* TestFeloRecognitionUITests */,
+				9BB8845128DF4ADD00C3313F /* Products */,
+				8328843C89E79A70DFB5A228 /* Pods */,
+				B045B2700201C88C8C488D84 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9BB8845128DF4ADD00C3313F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BB8845028DF4ADD00C3313F /* TestFeloRecognition.app */,
+				9BB8846B28DF4AE100C3313F /* TestFeloRecognitionTests.xctest */,
+				9BB8847528DF4AE100C3313F /* TestFeloRecognitionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BB8845228DF4ADD00C3313F /* TestFeloRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				9BD54A7328E6C74600CA97B0 /* MBProgressHUD */,
+				9BB8848828DFF78300C3313F /* FeloRecognition.framework */,
+				9BB8845328DF4ADD00C3313F /* AppDelegate.h */,
+				9BB8845428DF4ADD00C3313F /* AppDelegate.m */,
+				9BB8845628DF4ADD00C3313F /* SceneDelegate.h */,
+				9BB8845728DF4ADD00C3313F /* SceneDelegate.m */,
+				9BB8845928DF4ADD00C3313F /* ViewController.h */,
+				9BB8845A28DF4ADD00C3313F /* ViewController.m */,
+				9BCCFAA228E3E4D100C8B463 /* SubTitleViewController.h */,
+				9BCCFAA328E3E4D100C8B463 /* SubTitleViewController.m */,
+				9BB8845C28DF4ADD00C3313F /* Main.storyboard */,
+				9BB8845F28DF4AE100C3313F /* Assets.xcassets */,
+				9BB8846128DF4AE100C3313F /* LaunchScreen.storyboard */,
+				9BB8846428DF4AE100C3313F /* Info.plist */,
+				9BB8846528DF4AE100C3313F /* main.m */,
+			);
+			path = TestFeloRecognition;
+			sourceTree = "<group>";
+		};
+		9BB8846E28DF4AE100C3313F /* TestFeloRecognitionTests */ = {
+			isa = PBXGroup;
+			children = (
+				9BB8846F28DF4AE100C3313F /* TestFeloRecognitionTests.m */,
+			);
+			path = TestFeloRecognitionTests;
+			sourceTree = "<group>";
+		};
+		9BB8847828DF4AE100C3313F /* TestFeloRecognitionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9BB8847928DF4AE100C3313F /* TestFeloRecognitionUITests.m */,
+				9BB8847B28DF4AE100C3313F /* TestFeloRecognitionUITestsLaunchTests.m */,
+			);
+			path = TestFeloRecognitionUITests;
+			sourceTree = "<group>";
+		};
+		9BD54A7328E6C74600CA97B0 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				9BD54A7428E6C74600CA97B0 /* MBProgressHUD.m */,
+				9BD54A7528E6C74600CA97B0 /* MBProgressHUD+Extension.h */,
+				9BD54A7628E6C74600CA97B0 /* MBProgressHUD.h */,
+				9BD54A7728E6C74600CA97B0 /* MBProgressHUD+Extension.m */,
+				9BD54A7828E6C74600CA97B0 /* MBProgressHUD.bundle */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		B045B2700201C88C8C488D84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66DD6C5391901401D5A593CF /* Pods_TestFeloRecognition.framework */,
+				D8A793448A6B742196A45776 /* Pods_TestFeloRecognition_TestFeloRecognitionUITests.framework */,
+				5500BC9F3BE96B2E779B16D3 /* Pods_TestFeloRecognitionTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BB8844F28DF4ADD00C3313F /* TestFeloRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BB8847F28DF4AE100C3313F /* Build configuration list for PBXNativeTarget "TestFeloRecognition" */;
+			buildPhases = (
+				64C4F31F0DC138973CDDEE6C /* [CP] Check Pods Manifest.lock */,
+				9BB8844C28DF4ADD00C3313F /* Sources */,
+				9BB8844D28DF4ADD00C3313F /* Frameworks */,
+				9BB8844E28DF4ADD00C3313F /* Resources */,
+				A5C46A6D13C680F9D99B382A /* [CP] Embed Pods Frameworks */,
+				9BB8849128E010B700C3313F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestFeloRecognition;
+			productName = TestFeloRecognition;
+			productReference = 9BB8845028DF4ADD00C3313F /* TestFeloRecognition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9BB8846A28DF4AE100C3313F /* TestFeloRecognitionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BB8848228DF4AE100C3313F /* Build configuration list for PBXNativeTarget "TestFeloRecognitionTests" */;
+			buildPhases = (
+				77EBDE48BCF05A7159C994D8 /* [CP] Check Pods Manifest.lock */,
+				9BB8846728DF4AE100C3313F /* Sources */,
+				9BB8846828DF4AE100C3313F /* Frameworks */,
+				9BB8846928DF4AE100C3313F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BB8846D28DF4AE100C3313F /* PBXTargetDependency */,
+			);
+			name = TestFeloRecognitionTests;
+			productName = TestFeloRecognitionTests;
+			productReference = 9BB8846B28DF4AE100C3313F /* TestFeloRecognitionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9BB8847428DF4AE100C3313F /* TestFeloRecognitionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BB8848528DF4AE100C3313F /* Build configuration list for PBXNativeTarget "TestFeloRecognitionUITests" */;
+			buildPhases = (
+				A22DE8C20C0B4DC0ECEDCB20 /* [CP] Check Pods Manifest.lock */,
+				9BB8847128DF4AE100C3313F /* Sources */,
+				9BB8847228DF4AE100C3313F /* Frameworks */,
+				9BB8847328DF4AE100C3313F /* Resources */,
+				4BAC61DEFC2534C496E3BEAB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BB8847728DF4AE100C3313F /* PBXTargetDependency */,
+			);
+			name = TestFeloRecognitionUITests;
+			productName = TestFeloRecognitionUITests;
+			productReference = 9BB8847528DF4AE100C3313F /* TestFeloRecognitionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BB8844828DF4ADD00C3313F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					9BB8844F28DF4ADD00C3313F = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					9BB8846A28DF4AE100C3313F = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 9BB8844F28DF4ADD00C3313F;
+					};
+					9BB8847428DF4AE100C3313F = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 9BB8844F28DF4ADD00C3313F;
+					};
+				};
+			};
+			buildConfigurationList = 9BB8844B28DF4ADD00C3313F /* Build configuration list for PBXProject "TestFeloRecognition" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BB8844728DF4ADD00C3313F;
+			productRefGroup = 9BB8845128DF4ADD00C3313F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BB8844F28DF4ADD00C3313F /* TestFeloRecognition */,
+				9BB8846A28DF4AE100C3313F /* TestFeloRecognitionTests */,
+				9BB8847428DF4AE100C3313F /* TestFeloRecognitionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BB8844E28DF4ADD00C3313F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB8846328DF4AE100C3313F /* LaunchScreen.storyboard in Resources */,
+				9BD54A7B28E6C74600CA97B0 /* MBProgressHUD.bundle in Resources */,
+				9BB8846028DF4AE100C3313F /* Assets.xcassets in Resources */,
+				9BB8845E28DF4ADD00C3313F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BB8846928DF4AE100C3313F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BB8847328DF4AE100C3313F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BAC61DEFC2534C496E3BEAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition-TestFeloRecognitionUITests/Pods-TestFeloRecognition-TestFeloRecognitionUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition-TestFeloRecognitionUITests/Pods-TestFeloRecognition-TestFeloRecognitionUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition-TestFeloRecognitionUITests/Pods-TestFeloRecognition-TestFeloRecognitionUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64C4F31F0DC138973CDDEE6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestFeloRecognition-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77EBDE48BCF05A7159C994D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestFeloRecognitionTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A22DE8C20C0B4DC0ECEDCB20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestFeloRecognition-TestFeloRecognitionUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5C46A6D13C680F9D99B382A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition/Pods-TestFeloRecognition-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition/Pods-TestFeloRecognition-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition/Pods-TestFeloRecognition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BB8844C28DF4ADD00C3313F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB8845B28DF4ADD00C3313F /* ViewController.m in Sources */,
+				9BD54A7928E6C74600CA97B0 /* MBProgressHUD.m in Sources */,
+				9BB8845528DF4ADD00C3313F /* AppDelegate.m in Sources */,
+				9BCCFAA428E3E4D100C8B463 /* SubTitleViewController.m in Sources */,
+				9BB8846628DF4AE100C3313F /* main.m in Sources */,
+				9BD54A7A28E6C74600CA97B0 /* MBProgressHUD+Extension.m in Sources */,
+				9BB8845828DF4ADD00C3313F /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BB8846728DF4AE100C3313F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB8847028DF4AE100C3313F /* TestFeloRecognitionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BB8847128DF4AE100C3313F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB8847C28DF4AE100C3313F /* TestFeloRecognitionUITestsLaunchTests.m in Sources */,
+				9BB8847A28DF4AE100C3313F /* TestFeloRecognitionUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BB8846D28DF4AE100C3313F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BB8844F28DF4ADD00C3313F /* TestFeloRecognition */;
+			targetProxy = 9BB8846C28DF4AE100C3313F /* PBXContainerItemProxy */;
+		};
+		9BB8847728DF4AE100C3313F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BB8844F28DF4ADD00C3313F /* TestFeloRecognition */;
+			targetProxy = 9BB8847628DF4AE100C3313F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9BB8845C28DF4ADD00C3313F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BB8845D28DF4ADD00C3313F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9BB8846128DF4AE100C3313F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BB8846228DF4AE100C3313F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BB8847D28DF4AE100C3313F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9BB8847E28DF4AE100C3313F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BB8848028DF4AE100C3313F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31B58E57E228D04B3EBB55A3 /* Pods-TestFeloRecognition.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZDCRSX5D6W;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestFeloRecognition",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestFeloRecognition/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Not giving the permission will prevent you from sending voice info or initiatiing voice/video call";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.felo.FeloRecognition1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9BB8848128DF4AE100C3313F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86834946066EB717DB421683 /* Pods-TestFeloRecognition.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZDCRSX5D6W;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestFeloRecognition",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestFeloRecognition/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Not giving the permission will prevent you from sending voice info or initiatiing voice/video call";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.felo.FeloRecognition1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9BB8848328DF4AE100C3313F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD57901F3F0C8115DF279A2C /* Pods-TestFeloRecognitionTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZDCRSX5D6W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.felo.TestFeloRecognitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestFeloRecognition.app/TestFeloRecognition";
+			};
+			name = Debug;
+		};
+		9BB8848428DF4AE100C3313F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE0E5B3F6324C666751E1D2B /* Pods-TestFeloRecognitionTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZDCRSX5D6W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.felo.TestFeloRecognitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestFeloRecognition.app/TestFeloRecognition";
+			};
+			name = Release;
+		};
+		9BB8848628DF4AE100C3313F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56B74F0159E3F4DD2969761D /* Pods-TestFeloRecognition-TestFeloRecognitionUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZDCRSX5D6W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.felo.TestFeloRecognitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = TestFeloRecognition;
+			};
+			name = Debug;
+		};
+		9BB8848728DF4AE100C3313F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BAF058E9D58CF76CA6E98C3 /* Pods-TestFeloRecognition-TestFeloRecognitionUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZDCRSX5D6W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.felo.TestFeloRecognitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = TestFeloRecognition;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BB8844B28DF4ADD00C3313F /* Build configuration list for PBXProject "TestFeloRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BB8847D28DF4AE100C3313F /* Debug */,
+				9BB8847E28DF4AE100C3313F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BB8847F28DF4AE100C3313F /* Build configuration list for PBXNativeTarget "TestFeloRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BB8848028DF4AE100C3313F /* Debug */,
+				9BB8848128DF4AE100C3313F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BB8848228DF4AE100C3313F /* Build configuration list for PBXNativeTarget "TestFeloRecognitionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BB8848328DF4AE100C3313F /* Debug */,
+				9BB8848428DF4AE100C3313F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BB8848528DF4AE100C3313F /* Build configuration list for PBXNativeTarget "TestFeloRecognitionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BB8848628DF4AE100C3313F /* Debug */,
+				9BB8848728DF4AE100C3313F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BB8844828DF4ADD00C3313F /* Project object */;
+}

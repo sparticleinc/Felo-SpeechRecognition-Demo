@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'TestFeloRecognition' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+pod 'MicrosoftCognitiveServicesSpeech-iOS', '~> 1.18'
+  # Pods for TestFeloRecognition
+
+  target 'TestFeloRecognitionTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'TestFeloRecognitionUITests' do
+    # Pods for testing
+  end
+
+end
