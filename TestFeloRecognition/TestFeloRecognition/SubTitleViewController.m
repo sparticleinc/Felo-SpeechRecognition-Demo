@@ -30,36 +30,51 @@
         [self showAlert:@"请输入用户ID或房间ID"];
         return;
     }
-    
+    [self.changeLangSeg setSelectedSegmentIndex:2];
     [self.changeLangSeg addTarget:self action:@selector(selectButton:) forControlEvents:UIControlEventValueChanged];
     self.subTitleButton.titleLabel.text = @"离开房间";
-    //获取authtoken
+    
+    self.model = [[SpeechRecognModel alloc]init];
+    self.model.delegate = self;
     __weak typeof(self) weakSelf = self;
+    //block中添加刷新access token的代码，并将刷新后的token回传
+    self.model.refreshBlock = ^(BOOL expired) {
+        __strong typeof(self) strongSelf = weakSelf;
+        [strongSelf refreshToken:^(NSString *token) {
+            strongSelf.model.authToken = token;
+        }];
+    };
+    self.model.autoConnect = YES;//网络断开重连开关
+    
+    //获取authtoken
+    
     [self getMockAuthToken:self.userId completeHandler:^(NSDictionary *rsp) {
         [MBProgressHUD showText:@"正在初始化房间..." toView:weakSelf.view];
-        weakSelf.model = [[SpeechRecognModel alloc]init];
-        weakSelf.model.delegate = weakSelf;
-        weakSelf.model.autoConnect = YES;//网络断开重连开关
+
         NSMutableDictionary *dict = [NSMutableDictionary dictionary];
         if (rsp == nil) {
             [MBProgressHUD showText:@"初始化房间失败..." toView:weakSelf.view];
             return;
         }
-        dict[@"lang"]  = @"zh";
+        dict[@"lang"]  = @"ja";//需要被翻译的语音，默认为日语
         dict[@"bzid"]  = weakSelf.roomId;
         dict[@"appId"] = rsp[@"app_id"];
         dict[@"accessToken"] = rsp[@"access_token"];
-        dict[@"refreshToken"] = rsp[@"refresh_token"];
         dict[@"userId"] = rsp[@"user_id"];
         [weakSelf.model startSubtitle:dict completeHandler:^(BOOL flag) {
-                
+            [MBProgressHUD showText:flag ? @"初始化房间成功" : @"初始化房间失败..." toView:weakSelf.view];
         }];
     }];
 }
 
 //mock接口，在集成时，需要集成方提供
 - (void)getMockAuthToken:(NSString *)userID completeHandler:(void (^)(NSDictionary *))completeHandler {
-    [[FeloNetWorkUtils manager] feloGetToken:[@"https://open.felo.me/api/rest/meet-open-auth/mock-gzJ27aX5/8rW5FMjTY?token=" stringByAppendingString:userID]  successed:^(id responseObject) {
+    NSMutableString *url = [NSMutableString string];
+      [url appendString:@"https://open.felo.me/api/rest/meet-open-auth/mock-gzJ27aX5/8rW5FMjTY?token="];
+      [url appendString:userID];
+      [url appendString:@"&bizId="];
+      [url appendString:self.roomId];
+       [[FeloNetWorkUtils manager] feloGetToken:url successed:^(id responseObject) {
         NSDictionary *respDict = (NSDictionary *)responseObject;
         BOOL succ = [respDict objectForKey:@"success"];
         if (succ) {
@@ -110,7 +125,6 @@
 }
 
 
-
 - (void)changeSubTitleLang {
     [MBProgressHUD showText:@"正在切换语言" toView:self.view];
     [self.model setLanguage:self.roomId language:self.sourceLang completeHandler:^(BOOL flag) {
@@ -121,8 +135,10 @@
 
 - (void)closeSubTitle {
     [self.view endEditing:YES];
-    [self.model leaveConversation:self.roomId completeHandler:^(BOOL flag) {
-        [self.navigationController popViewControllerAnimated:YES];
+    [self.model leaveConversation:^(BOOL flag) {
+        if(!flag) {
+            [MBProgressHUD showText:@"退出房间失败" toView:self.view];
+        }
     }];
 }
 
@@ -132,10 +148,18 @@
 }
 
 
+//access token 过期时，需要刷新token并将新token回传到sdk
+- (void)refreshToken:(void (^)(NSString *))refreshBlock {
+    [MBProgressHUD showText:@"token已过期，正在刷新" duration:2.0];
+    [self getMockAuthToken:self.userId completeHandler:^(NSDictionary *rsp) {
+        refreshBlock(rsp[@"access_token"]);
+    }];
+}
+
 #pragma mark FeloSubtitleDelegate
 
 - (void)disconnectServer {
-    [MBProgressHUD showText:@"网络已断开，字幕服务器无法正常使用，正在重连..." duration:2.0];
+    [MBProgressHUD showText:@"网络已断开，字幕服务器无法正常使用" duration:2.0];
 }
 
 - (void)reconnectedServer {
@@ -143,6 +167,7 @@
 }
 
 - (void)getSubtitle:(NSDictionary *)subTitle {
+    NSLog(@"subTitle:%@",subTitle);
     NSString *transcribeText = subTitle[@"transcribeText"];
     NSArray *array = [self arrayWithJsonString:transcribeText];
     if ([self.displayName isEqualToString:@""]) {
@@ -174,7 +199,7 @@
     }
 }
 
-- (id)arrayWithJsonString:(NSString *)string{
+- (id)arrayWithJsonString:(NSString *)string {
     if (self == nil) {
         return nil;
     }

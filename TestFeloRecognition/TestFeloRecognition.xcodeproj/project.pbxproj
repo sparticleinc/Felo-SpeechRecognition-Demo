@@ -18,12 +18,12 @@
 		9BB8847028DF4AE100C3313F /* TestFeloRecognitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8846F28DF4AE100C3313F /* TestFeloRecognitionTests.m */; };
 		9BB8847A28DF4AE100C3313F /* TestFeloRecognitionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8847928DF4AE100C3313F /* TestFeloRecognitionUITests.m */; };
 		9BB8847C28DF4AE100C3313F /* TestFeloRecognitionUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8847B28DF4AE100C3313F /* TestFeloRecognitionUITestsLaunchTests.m */; };
-		9BB8848F28E010B700C3313F /* FeloRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB8848828DFF78300C3313F /* FeloRecognition.framework */; };
-		9BB8849028E010B700C3313F /* FeloRecognition.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB8848828DFF78300C3313F /* FeloRecognition.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9BCCFAA428E3E4D100C8B463 /* SubTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCCFAA328E3E4D100C8B463 /* SubTitleViewController.m */; };
 		9BD54A7928E6C74600CA97B0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD54A7428E6C74600CA97B0 /* MBProgressHUD.m */; };
 		9BD54A7A28E6C74600CA97B0 /* MBProgressHUD+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD54A7728E6C74600CA97B0 /* MBProgressHUD+Extension.m */; };
 		9BD54A7B28E6C74600CA97B0 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9BD54A7828E6C74600CA97B0 /* MBProgressHUD.bundle */; };
+		9BD5D2CA28F7BC2500F6F85E /* FeloRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB8848828DFF78300C3313F /* FeloRecognition.framework */; };
+		9BD5D2CB28F7BC2500F6F85E /* FeloRecognition.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB8848828DFF78300C3313F /* FeloRecognition.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ACBEFCC4CB456F211E7946B5 /* Pods_TestFeloRecognition_TestFeloRecognitionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A793448A6B742196A45776 /* Pods_TestFeloRecognition_TestFeloRecognitionUITests.framework */; };
 		C497A8BE003ABA5DB61F51B9 /* Pods_TestFeloRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD6C5391901401D5A593CF /* Pods_TestFeloRecognition.framework */; };
 /* End PBXBuildFile section */
@@ -46,13 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9BB8849128E010B700C3313F /* Embed Frameworks */ = {
+		9BD5D2CC28F7BC2500F6F85E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9BB8849028E010B700C3313F /* FeloRecognition.framework in Embed Frameworks */,
+				9BD5D2CB28F7BC2500F6F85E /* FeloRecognition.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BB8848F28E010B700C3313F /* FeloRecognition.framework in Frameworks */,
+				9BD5D2CA28F7BC2500F6F85E /* FeloRecognition.framework in Frameworks */,
 				C497A8BE003ABA5DB61F51B9 /* Pods_TestFeloRecognition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,8 +232,8 @@
 				9BB8844C28DF4ADD00C3313F /* Sources */,
 				9BB8844D28DF4ADD00C3313F /* Frameworks */,
 				9BB8844E28DF4ADD00C3313F /* Resources */,
-				A5C46A6D13C680F9D99B382A /* [CP] Embed Pods Frameworks */,
-				9BB8849128E010B700C3313F /* Embed Frameworks */,
+				9BD5D2CC28F7BC2500F6F85E /* Embed Frameworks */,
+				C952FDC822335F33F9CFC356 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,7 +271,7 @@
 				9BB8847128DF4AE100C3313F /* Sources */,
 				9BB8847228DF4AE100C3313F /* Frameworks */,
 				9BB8847328DF4AE100C3313F /* Resources */,
-				4BAC61DEFC2534C496E3BEAB /* [CP] Embed Pods Frameworks */,
+				BCCF3F5D8128A448E895991B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -354,23 +354,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4BAC61DEFC2534C496E3BEAB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition-TestFeloRecognitionUITests/Pods-TestFeloRecognition-TestFeloRecognitionUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition-TestFeloRecognitionUITests/Pods-TestFeloRecognition-TestFeloRecognitionUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition-TestFeloRecognitionUITests/Pods-TestFeloRecognition-TestFeloRecognitionUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		64C4F31F0DC138973CDDEE6C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -437,7 +420,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A5C46A6D13C680F9D99B382A /* [CP] Embed Pods Frameworks */ = {
+		BCCF3F5D8128A448E895991B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition-TestFeloRecognitionUITests/Pods-TestFeloRecognition-TestFeloRecognitionUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition-TestFeloRecognitionUITests/Pods-TestFeloRecognition-TestFeloRecognitionUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition-TestFeloRecognitionUITests/Pods-TestFeloRecognition-TestFeloRecognitionUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C952FDC822335F33F9CFC356 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
