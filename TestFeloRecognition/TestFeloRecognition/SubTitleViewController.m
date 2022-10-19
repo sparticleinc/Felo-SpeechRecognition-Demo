@@ -36,18 +36,17 @@
     
     self.model = [[SpeechRecognModel alloc]init];
     self.model.delegate = self;
+    self.model.autoConnect = YES;//网络断开重连开关
     __weak typeof(self) weakSelf = self;
     //block中添加刷新access token的代码，并将刷新后的token回传
     self.model.refreshBlock = ^(BOOL expired) {
+        //一定要加下面这句，不然对象被提前释放，无法设置authtoken
         __strong typeof(self) strongSelf = weakSelf;
         [strongSelf refreshToken:^(NSString *token) {
             strongSelf.model.authToken = token;
         }];
     };
-    self.model.autoConnect = YES;//网络断开重连开关
-    
     //获取authtoken
-    
     [self getMockAuthToken:self.userId completeHandler:^(NSDictionary *rsp) {
         [MBProgressHUD showText:@"正在初始化房间..." toView:weakSelf.view];
 
@@ -56,6 +55,7 @@
             [MBProgressHUD showText:@"初始化房间失败..." toView:weakSelf.view];
             return;
         }
+        //开启字母服务需要的参数
         dict[@"lang"]  = @"ja";//需要被翻译的语音，默认为日语
         dict[@"bzid"]  = weakSelf.roomId;
         dict[@"appId"] = rsp[@"app_id"];
@@ -175,7 +175,7 @@
     }
     for (NSDictionary *dict in array) {
         if ([subTitle[@"displayName"] isEqualToString:self.displayName]){
-            if ([dict[@"language"] isEqualToString:@"zh-TW"]) {
+            if ([dict[@"language"] isEqualToString:@"zh-CN"]) {
                 self.zhTextView.text = [[self.displayName stringByAppendingString:@": "] stringByAppendingString: dict[@"text"]];
             } else if ([dict[@"language"] isEqualToString:@"en-US"]) {
                 self.enTextView.text = [[self.displayName stringByAppendingString:@": "] stringByAppendingString: dict[@"text"]];
@@ -186,7 +186,7 @@
             }
         } else {
             self.displayName = subTitle[@"displayName"];
-            if ([dict[@"language"] isEqualToString:@"zh-TW"]) {
+            if ([dict[@"language"] isEqualToString:@"zh-CN"]) {
                 self.zhTextView.text = [[self.zhTextView.text stringByAppendingString:@"\n"] stringByAppendingString:[[self.displayName stringByAppendingString:@": "] stringByAppendingString: dict[@"text"]]];
             } else if ([dict[@"language"] isEqualToString:@"en-US"]) {
                 self.enTextView.text = [[self.enTextView.text stringByAppendingString:@"\n"] stringByAppendingString:[[self.displayName stringByAppendingString:@": "] stringByAppendingString: dict[@"text"]]];

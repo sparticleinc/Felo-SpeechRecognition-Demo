@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7ADE7D9EFCFF4F73F1589FA2 /* Pods_TestFeloRecognitionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5500BC9F3BE96B2E779B16D3 /* Pods_TestFeloRecognitionTests.framework */; };
 		9BB8845528DF4ADD00C3313F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8845428DF4ADD00C3313F /* AppDelegate.m */; };
-		9BB8845828DF4ADD00C3313F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8845728DF4ADD00C3313F /* SceneDelegate.m */; };
 		9BB8845B28DF4ADD00C3313F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8845A28DF4ADD00C3313F /* ViewController.m */; };
 		9BB8845E28DF4ADD00C3313F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB8845C28DF4ADD00C3313F /* Main.storyboard */; };
 		9BB8846028DF4AE100C3313F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BB8845F28DF4AE100C3313F /* Assets.xcassets */; };
@@ -24,6 +23,7 @@
 		9BD54A7B28E6C74600CA97B0 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9BD54A7828E6C74600CA97B0 /* MBProgressHUD.bundle */; };
 		9BD5D2CA28F7BC2500F6F85E /* FeloRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB8848828DFF78300C3313F /* FeloRecognition.framework */; };
 		9BD5D2CB28F7BC2500F6F85E /* FeloRecognition.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB8848828DFF78300C3313F /* FeloRecognition.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9BEC8C4028FFEE880066CBAD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEC8C3F28FFEE880066CBAD /* SceneDelegate.m */; };
 		ACBEFCC4CB456F211E7946B5 /* Pods_TestFeloRecognition_TestFeloRecognitionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A793448A6B742196A45776 /* Pods_TestFeloRecognition_TestFeloRecognitionUITests.framework */; };
 		C497A8BE003ABA5DB61F51B9 /* Pods_TestFeloRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD6C5391901401D5A593CF /* Pods_TestFeloRecognition.framework */; };
 /* End PBXBuildFile section */
@@ -69,8 +69,6 @@
 		9BB8845028DF4ADD00C3313F /* TestFeloRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestFeloRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB8845328DF4ADD00C3313F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9BB8845428DF4ADD00C3313F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9BB8845628DF4ADD00C3313F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		9BB8845728DF4ADD00C3313F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		9BB8845928DF4ADD00C3313F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9BB8845A28DF4ADD00C3313F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9BB8845D28DF4ADD00C3313F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,6 +89,8 @@
 		9BD54A7628E6C74600CA97B0 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		9BD54A7728E6C74600CA97B0 /* MBProgressHUD+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Extension.m"; sourceTree = "<group>"; };
 		9BD54A7828E6C74600CA97B0 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		9BEC8C3E28FFEE870066CBAD /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		9BEC8C3F28FFEE880066CBAD /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		CE0E5B3F6324C666751E1D2B /* Pods-TestFeloRecognitionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestFeloRecognitionTests.release.xcconfig"; path = "Target Support Files/Pods-TestFeloRecognitionTests/Pods-TestFeloRecognitionTests.release.xcconfig"; sourceTree = "<group>"; };
 		D8A793448A6B742196A45776 /* Pods_TestFeloRecognition_TestFeloRecognitionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestFeloRecognition_TestFeloRecognitionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD57901F3F0C8115DF279A2C /* Pods-TestFeloRecognitionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestFeloRecognitionTests.debug.xcconfig"; path = "Target Support Files/Pods-TestFeloRecognitionTests/Pods-TestFeloRecognitionTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -167,8 +167,8 @@
 				9BB8848828DFF78300C3313F /* FeloRecognition.framework */,
 				9BB8845328DF4ADD00C3313F /* AppDelegate.h */,
 				9BB8845428DF4ADD00C3313F /* AppDelegate.m */,
-				9BB8845628DF4ADD00C3313F /* SceneDelegate.h */,
-				9BB8845728DF4ADD00C3313F /* SceneDelegate.m */,
+				9BEC8C3E28FFEE870066CBAD /* SceneDelegate.h */,
+				9BEC8C3F28FFEE880066CBAD /* SceneDelegate.m */,
 				9BB8845928DF4ADD00C3313F /* ViewController.h */,
 				9BB8845A28DF4ADD00C3313F /* ViewController.m */,
 				9BCCFAA228E3E4D100C8B463 /* SubTitleViewController.h */,
@@ -233,7 +233,6 @@
 				9BB8844D28DF4ADD00C3313F /* Frameworks */,
 				9BB8844E28DF4ADD00C3313F /* Resources */,
 				9BD5D2CC28F7BC2500F6F85E /* Embed Frameworks */,
-				C952FDC822335F33F9CFC356 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,7 +270,6 @@
 				9BB8847128DF4AE100C3313F /* Sources */,
 				9BB8847228DF4AE100C3313F /* Frameworks */,
 				9BB8847328DF4AE100C3313F /* Resources */,
-				BCCF3F5D8128A448E895991B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -420,40 +418,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BCCF3F5D8128A448E895991B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition-TestFeloRecognitionUITests/Pods-TestFeloRecognition-TestFeloRecognitionUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition-TestFeloRecognitionUITests/Pods-TestFeloRecognition-TestFeloRecognitionUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition-TestFeloRecognitionUITests/Pods-TestFeloRecognition-TestFeloRecognitionUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C952FDC822335F33F9CFC356 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition/Pods-TestFeloRecognition-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition/Pods-TestFeloRecognition-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition/Pods-TestFeloRecognition-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -464,10 +428,10 @@
 				9BB8845B28DF4ADD00C3313F /* ViewController.m in Sources */,
 				9BD54A7928E6C74600CA97B0 /* MBProgressHUD.m in Sources */,
 				9BB8845528DF4ADD00C3313F /* AppDelegate.m in Sources */,
+				9BEC8C4028FFEE880066CBAD /* SceneDelegate.m in Sources */,
 				9BCCFAA428E3E4D100C8B463 /* SubTitleViewController.m in Sources */,
 				9BB8846628DF4AE100C3313F /* main.m in Sources */,
 				9BD54A7A28E6C74600CA97B0 /* MBProgressHUD+Extension.m in Sources */,
-				9BB8845828DF4ADD00C3313F /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,7 +616,7 @@
 				INFOPLIST_FILE = TestFeloRecognition/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Not giving the permission will prevent you from sending voice info or initiatiing voice/video call";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -692,7 +656,7 @@
 				INFOPLIST_FILE = TestFeloRecognition/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Not giving the permission will prevent you from sending voice info or initiatiing voice/video call";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
