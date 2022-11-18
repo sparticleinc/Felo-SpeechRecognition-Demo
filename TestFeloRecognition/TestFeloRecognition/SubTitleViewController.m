@@ -24,6 +24,12 @@
 
 @implementation SubTitleViewController
 
+- (IBAction)startSubscribe:(id)sender {
+    [self.model startTranscribing:^(BOOL succ) {
+        NSLog(@"start transscribing succ:%@",@(succ));
+    }];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     if ([self.userId isEqualToString:@""] || [self.roomId isEqualToString:@""]) {
@@ -33,7 +39,6 @@
     [self.changeLangSeg setSelectedSegmentIndex:2];
     [self.changeLangSeg addTarget:self action:@selector(selectButton:) forControlEvents:UIControlEventValueChanged];
     self.subTitleButton.titleLabel.text = @"离开房间";
-    
     self.model = [[SpeechRecognModel alloc]init];
     self.model.delegate = self;
     self.model.autoConnect = YES;//网络断开重连开关
@@ -49,7 +54,6 @@
     //获取authtoken
     [self getMockAuthToken:self.userId completeHandler:^(NSDictionary *rsp) {
         [MBProgressHUD showText:@"正在初始化房间..." toView:weakSelf.view];
-
         NSMutableDictionary *dict = [NSMutableDictionary dictionary];
         if (rsp == nil) {
             [MBProgressHUD showText:@"初始化房间失败..." toView:weakSelf.view];
@@ -74,7 +78,7 @@
       [url appendString:userID];
       [url appendString:@"&bizId="];
       [url appendString:self.roomId];
-       [[FeloNetWorkUtils manager] feloGetToken:url successed:^(id responseObject) {
+       [[FeloSubtitleNetWorkUtils manager] feloGetToken:url successed:^(id responseObject) {
         NSDictionary *respDict = (NSDictionary *)responseObject;
         BOOL succ = [respDict objectForKey:@"success"];
         if (succ) {
