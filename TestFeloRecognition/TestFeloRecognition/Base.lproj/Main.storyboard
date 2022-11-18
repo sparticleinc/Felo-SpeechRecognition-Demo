@@ -33,7 +33,7 @@
                                 <color key="selectedSegmentTintColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBG-YZ-vZp">
-                                <rect key="frame" x="160.5" y="48" width="93.5" height="34.5"/>
+                                <rect key="frame" x="232.5" y="48" width="93.5" height="34.5"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34.5" id="VM0-4p-9ub"/>
@@ -164,19 +164,34 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="AD9-Bk-49V"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="EfI-qr-tnj"/>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5L-br-ECI">
+                                <rect key="frame" x="88" y="48" width="93.5" height="34.5"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34.5" id="zhK-G0-uCV"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="开始识别"/>
+                                <connections>
+                                    <action selector="startSubscribe:" destination="3ad-Kb-tF2" eventType="touchUpInside" id="Q90-kg-Zhw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xkS-Eg-p6y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="FBG-YZ-vZp" firstAttribute="leading" secondItem="h5L-br-ECI" secondAttribute="trailing" constant="51" id="3xD-ua-fqu"/>
                             <constraint firstItem="vfu-4g-D4J" firstAttribute="top" secondItem="wfn-fM-5Pn" secondAttribute="bottom" constant="28.5" id="A3p-sQ-CWf"/>
                             <constraint firstItem="xkS-Eg-p6y" firstAttribute="trailing" secondItem="vfu-4g-D4J" secondAttribute="trailing" id="BuC-W2-Eip"/>
                             <constraint firstItem="FBG-YZ-vZp" firstAttribute="top" secondItem="xkS-Eg-p6y" secondAttribute="top" id="Dke-y3-ouN"/>
                             <constraint firstItem="wfn-fM-5Pn" firstAttribute="top" secondItem="FBG-YZ-vZp" secondAttribute="bottom" constant="34" id="PZF-Gs-5hq"/>
                             <constraint firstItem="vfu-4g-D4J" firstAttribute="leading" secondItem="xkS-Eg-p6y" secondAttribute="leading" id="Zh8-Tf-Lnw"/>
                             <constraint firstItem="wfn-fM-5Pn" firstAttribute="leading" secondItem="xkS-Eg-p6y" secondAttribute="leading" constant="46" id="cE6-ka-Td4"/>
+                            <constraint firstItem="xkS-Eg-p6y" firstAttribute="trailing" secondItem="FBG-YZ-vZp" secondAttribute="trailing" constant="88" id="cyO-vq-xfQ"/>
+                            <constraint firstItem="h5L-br-ECI" firstAttribute="centerY" secondItem="FBG-YZ-vZp" secondAttribute="centerY" id="na4-Ym-qa1"/>
                             <constraint firstItem="xkS-Eg-p6y" firstAttribute="trailing" secondItem="wfn-fM-5Pn" secondAttribute="trailing" constant="46" id="x9L-ZN-ha9"/>
                             <constraint firstAttribute="bottom" secondItem="vfu-4g-D4J" secondAttribute="bottom" id="yfe-OQ-wAS"/>
-                            <constraint firstItem="FBG-YZ-vZp" firstAttribute="centerX" secondItem="xkS-Eg-p6y" secondAttribute="centerX" id="zys-uZ-cVj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sib-Qm-ima"/>
@@ -196,7 +211,6 @@
         <!--Navigation Controller-->
         <scene sceneID="Ve4-fv-XIb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R8n-o5-yMi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="Pj3-3t-3cB" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yrH-oa-u0V">
                         <rect key="frame" x="0.0" y="48" width="414" height="44"/>
@@ -206,6 +220,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="OFl-3M-zTx"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R8n-o5-yMi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3196" y="61"/>
         </scene>
@@ -295,6 +310,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

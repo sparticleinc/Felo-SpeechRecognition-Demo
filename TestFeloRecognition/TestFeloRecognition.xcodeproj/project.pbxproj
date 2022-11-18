@@ -233,6 +233,7 @@
 				9BB8844D28DF4ADD00C3313F /* Frameworks */,
 				9BB8844E28DF4ADD00C3313F /* Resources */,
 				9BD5D2CC28F7BC2500F6F85E /* Embed Frameworks */,
+				45ADFD07D430882087BC95E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -270,6 +271,7 @@
 				9BB8847128DF4AE100C3313F /* Sources */,
 				9BB8847228DF4AE100C3313F /* Frameworks */,
 				9BB8847328DF4AE100C3313F /* Resources */,
+				5091F8F3D644B953F15C1D2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -352,6 +354,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		45ADFD07D430882087BC95E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition/Pods-TestFeloRecognition-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition/Pods-TestFeloRecognition-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition/Pods-TestFeloRecognition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5091F8F3D644B953F15C1D2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition-TestFeloRecognitionUITests/Pods-TestFeloRecognition-TestFeloRecognitionUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition-TestFeloRecognitionUITests/Pods-TestFeloRecognition-TestFeloRecognitionUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestFeloRecognition-TestFeloRecognitionUITests/Pods-TestFeloRecognition-TestFeloRecognitionUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		64C4F31F0DC138973CDDEE6C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
